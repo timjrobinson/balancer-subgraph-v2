@@ -11,7 +11,7 @@ export function isPricingAsset(asset: Address): boolean {
   return false;
 }
 
-export function updatePoolLiquidity(poolId: string, block: BigInt, pricingAsset: Address, timestamp: i32): boolean {
+export function updatePoolLiquidity(poolId: string, block: BigInt, pricingAsset: Address): boolean {
   let pool = Pool.load(poolId);
   if (pool == null) return false;
 
