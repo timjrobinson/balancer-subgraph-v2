@@ -1,5 +1,16 @@
 import { BigDecimal, Address, BigInt, ethereum } from '@graphprotocol/graph-ts';
-import { Pool, User, PoolToken, PoolShare, PoolSnapshot, PriceRateProvider, Token, TokenSnapshot, TradePair, TradePairSnapshot } from '../../types/schema';
+import {
+  Pool,
+  User,
+  PoolToken,
+  PoolShare,
+  PoolSnapshot,
+  PriceRateProvider,
+  Token,
+  TokenSnapshot,
+  TradePair,
+  TradePairSnapshot,
+} from '../../types/schema';
 import { ERC20 } from '../../types/Vault/ERC20';
 import { ONE_BD, SWAP_IN, SWAP_OUT, ZERO, ZERO_BD } from './constants';
 import { getPoolAddress } from './pools';
