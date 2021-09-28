@@ -212,7 +212,7 @@ function handlePoolExited(event: PoolBalanceChanged): void {
 
     tokenSnapshot.balanceNotional = tokenSnapshot.balanceNotional.minus(tokenAmountOut);
     tokenSnapshot.balanceUSD = tokenSnapshot.balanceUSD.minus(tokenAmountOutUSD);
-    
+
     poolToken.balance = newAmount;
     poolToken.save();
     token.save();
