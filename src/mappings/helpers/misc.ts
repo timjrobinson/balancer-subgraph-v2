@@ -111,6 +111,8 @@ export function createPoolTokenEntity(poolId: string, tokenAddress: Address): vo
   }
 
   let poolToken = new PoolToken(poolTokenId);
+  // ensures token entity is created
+  let _token = getToken(tokenAddress);
   poolToken.poolId = poolId;
   poolToken.address = tokenAddress.toHexString();
   poolToken.name = name;
@@ -119,6 +121,7 @@ export function createPoolTokenEntity(poolId: string, tokenAddress: Address): vo
   poolToken.balance = ZERO_BD;
   poolToken.invested = ZERO_BD;
   poolToken.priceRate = ONE_BD;
+  poolToken.token = _token.id;
   poolToken.save();
 }
 
