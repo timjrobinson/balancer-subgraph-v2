@@ -28,6 +28,8 @@ import {
   getTokenSnapshot,
   uptickSwapsForToken,
   updateTokenBalances,
+  getTradePair,
+  getTradePairSnapshot,
 } from './helpers/misc';
 import { updatePoolWeights } from './helpers/weighted';
 import { isPricingAsset, updatePoolLiquidity, valueInUSD } from './pricing';
